@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://your-site-or-cdn.com/fontawesome/v6.1.1/js/all.js" data-auto-replace-svg="nest"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <title>Assignment-2: EdYoda Stories</title>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      padding: 10px;
+      background-color: #f2f6ff;
+    }
+
+    .header {
+      padding: 16px 78px;
+      background-color: #fff;
+    }
+
+    .logo {
+      width: 130px;
+      font-size: 32px;
+      color: #0084ff;
+      display: inline;
+      font-weight: bold;
+      height: 100%;
+      margin-top: 5px;
+      margin-left: 20px;
+    }
+
+    .logo-storeis {
+      margin: 0;
+      font-weight: 500;
+      font-family: Raleway, sans-serif;
+      font-style: italic;
+      margin-left: 20px;
+      color: #000;
+    }
+
+    .explore {
+      height: 100%;
+      font-weight: bold;
+      display: inline;
+      margin-left: 20px;
+      padding-top: 0px;
+      padding-left: 8px;
+      color: #000;
+    }
+
+    .categories {
+      width: 80%;
+      margin: 0 auto;
+      font-size: 16px;
+      padding-top: 16px;
+      padding-left: 50px;
+      padding-bottom: 20px;
+    }
+
+    .tredning-posts {
+      display: block;
+      font-weight: 600;
+      color: #000;
+      margin: 0px;
+    }
+
+    .filter-text {
+      font-size: 14px;
+      font-weight: 600;
+      margin-left: 8px;
+    }
+
+    .active-category-btn {
+      padding: 6px 14px;
+      color: #fff;
+      background-color: #0084ff;
+      border-radius: 15px;
+      border: 1px solid #0084ff;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    .categories-button {
+      padding: 6px 14px;
+      width: auto;
+      color: #0084ff;
+      border-radius: 15px;
+      border: 1px solid #0084ff;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    .card {
+      width: 29%;
+      display: inline-block;
+      padding: 9px 7px;
+    }
+
+    .card:hover{
+      transform: scale(1.04);
+    }
+
+    .image-section {
+      height: 176px;
+      width: 100%;
+    }
+
+    .cat-img {
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    .card-title h2 {
+      font-size: 18px;
+      text-align: left;
+      margin: 0;
+      font-weight: 600;
+    }
+
+    .author-container {
+      padding-top: 4px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #0096ff;
+      font-style: italic;
+    }
+
+    .author {
+      border-right: 1px solid rgba(0, 0, 0, 0.7);
+      padding-right: 5px;
+    }
+
+    .date {
+      padding-left: 3px;
+      font-size: 14px;
+      font-weight: 300;
+      color: rgba(0, 0, 0, 0.7);
+    }
+
+    .card-description {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.43;
+      color: rgba(0, 0, 0, 0.6);
+      margin: 4px 0;
+    }
+
+    main {
+      margin: 30px 30px;
+      margin-left: 180px;
+    }
+
+    .active {
+      background-color: #0084ff;
+      color: #fff;
+    }
+
+    .footer {
+      background-color: #172146;
+      padding: 80px 16%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- header section start -->
+  <header class="header">
+    <p class="logo">EDYODA</>
+    <div class="explore">Explore Catagories <i class="fa-solid fa-angle-down"></i></i></div>
+    <div class="logo-storeis"> Stories </div>
+  </header>
+  <!-- header section end -->
+
+  <!-- Catagories start -->
+  <div class="categories">
+    <h1 class="tredning-posts">Trending Posts</h1>
+    <p class="filter-text"><img src="https://img.icons8.com/ios-filled/18/4a90e2/empty-filter.png" />
+      Fliter by category</p>
+    <button class="active-category-btn"> All</button>
+    <button class="categories-button">Artificial Intelligence</button>
+    <button class="categories-button">Cloud Computing</button>
+    <button class="categories-button">DevOps</button>
+    <button class="categories-button">Programing Languages</button>
+    <button class="categories-button">Mobile Application Development</button>
+    <button class="categories-button">Technology and Tools</button>
+    <button class="categories-button">Get a Job in a Tech company</button>
+    <button class="categories-button">Others</button>
+
+  </div>
+  <!-- Catagories end -->
+  <main>
+
+    <div class="main">
+
+
+      <section class="card">
+        <div class="image-section">
+          <img class="cat-img"
+            src="https://edyoda.s3.amazonaws.com/media/blog-images/learn_machine_learning_courses_online.png"
+            alt="img1">
+        </div>
+        <div class="card-title">
+          <h2>Introduction To A Machine Learning </h2>
+          <div>
+            <div class="author-container">
+              <span class="author">Edyoda</span>
+              <span class="date"> 23 Aug 2019</span>
+
+            </div>
+            <div class="card-description">
+              <p>We have had an insight into Artificial Intelligence. Well, one of its subfields is machine learning
+                and this introduction will help you get a fair idea of what a machine learning.
+
+              </p>
+            </div>
+
+      </section>
+
+
+
+
+
+
+      <section class="card">
+        <div class="image-section">
+          <img class="cat-img" src="https://edyoda.s3.amazonaws.com/media/blog-images/6.png" alt="img1">
+        </div>
+        <div class="card-title">
+          <h2>LAMP Stack Vs MEAN stac...
+          </h2>
+          <div>
+            <div class="author-container">
+              <span class="author">Edyoda</span>
+              <span class="date"> 24 Aug 2019</span>
+
+            </div>
+            <div class="card-description">
+              <p>In today’s dynamic world, rapid web application development with a smooth user interface that can
+                adapt to specific features is the main business requirement Many organizations.</p>
+            </div>
+
+      </section>
+
+
+
+
+      <section class="card">
+        <div class="image-section">
+          <img class="cat-img" src="https://edyoda.s3.amazonaws.com/media/blog-images/4.png" alt="img1">
+        </div>
+        <div class="card-title">
+          <h2>Impact of Cloud Computing in various industries
+          </h2>
+          <div>
+            <div class="author-container">
+              <span class="author">Edyoda</span>
+              <span class="date"> 24 Aug 2019</span>
+
+            </div>
+            <div class="card-description">
+              <p>Cloud computing has been rapidly gaining pace in the world of information technology. It has been
+                observed that over 90% of global enterprises are using cloud.
+              </p>
+            </div>
+
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <section class="card">
+        <div class="image-section">
+          <img class="cat-img" src="https://edyoda.s3.amazonaws.com/media/blog-images/3.png" alt="img1">
+        </div>
+        <div class="card-title">
+          <h2>Challenge of Machine Le...
+          </h2>
+          <div>
+            <div class="author-container">
+              <span class="author">Edyoda</span>
+              <span class="date"> 24 Aug 2019</span>
+
+            </div>
+            <div class="card-description">
+              <p>Machine Learning is a subset of artificial intelligence which is an important part of computer science
+                The revolution
+                of Big Data promises to transform the way we work live and.
+              </p>
+            </div>
+
+      </section>
+
+
+
+
+
+
+      <section class="card">
+        <div class="image-section">
+          <img class="cat-img" src="https://edyoda.s3.amazonaws.com/media/blog-images/5.png" alt="img1">
+        </div>
+        <div class="card-title">
+          <h2>Breaking the Myths around cybersecurity
+
+          </h2>
+          <div>
+            <div class="author-container">
+              <span class="author">Edyoda</span>
+              <span class="date"> 26 Aug 2019</span>
+
+            </div>
+            <div class="card-description">
+              <p>Cybersecurity plays an integral role in the process of good business models. But event cryptosecurity
+                programs built with good intentions can fail short in front of advanced cyber attacking.
+              </p>
+            </div>
+
+      </section>
+
+
+
+
+      <section class="card">
+        <div class="image-section">
+          <img class="cat-img" src="https://edyoda.s3.amazonaws.com/media/blog-images/7.png" alt="img1">
+        </div>
+        <div class="card-title">
+          <h2>Importance of Data Backu...
+
+          </h2>
+          <div>
+            <div class="author-container">
+              <span class="author">Edyoda</span>
+              <span class="date"> 26 Aug 2019</span>
+
+            </div>
+            <div class="card-description">
+              <p>A business must always introspect the areas where they lack in order to bring about a positive
+                changes in the work environment. One of the main precautionsor a contingency plan the..
+              </p>
+            </div>
+
+      </section>
+      </a>
+
+
+
+
+
+
+
+
+      <section class="card">
+        <div class="image-section">
+          <img class="cat-img"
+            src="https://edyoda.s3.amazonaws.com/media/blog-images/automation-testing-an-overview-2.png" alt="img1">
+        </div>
+        <div class="card-title">
+          <h2>What is Web Scraping & Other Details
+          </h2>
+          <div>
+            <div class="author-container">
+              <span class="author">Zac Clancy</span>
+              <span class="date"> 25 Sep 2019</span>
+
+            </div>
+            <div class="card-description">
+              <p>A simply put, web Scraping is one of the tools developers use to gather and analyze information form
+                the
+                internet some websites and platforms offer application programming interface.
+              </p>
+            </div>
+
+      </section>
+
+
+
+
+
+
+      <section class="card">
+        <div class="image-section">
+          <img class="cat-img" src="https://edyoda.s3.amazonaws.com/media/blog-images/what_is_isa_blog_1.png"
+            alt="img1">
+        </div>
+        <div class="card-title">
+          <h2>What is income share Aggrement?
+
+          </h2>
+          <div>
+            <div class="author-container">
+              <span class="author">Edyoda</span>
+              <span class="date"> 14 Oct 2019</span>
+
+            </div>
+            <div class="card-description">
+              <p>The term income share Aggrement has been around for a long time since 1955to be practice. Suprised eh?
+                it was first introduced by Mitton Firedman, an American economist...
+              </p>
+            </div>
+
+      </section>
+
+
+
+
+      <section class="card">
+        <div class="image-section">
+          <img class="cat-img" src="https://edyoda.s3.amazonaws.com/media/blog-images/practical_machine_learning_1.png"
+            alt="img1">
+        </div>
+        <div class="card-title">
+          <h2>Practice Machine Learning
+
+          </h2>
+          <div>
+            <div class="author-container">
+              <span class="author">Daniel Pyrathon</span>
+              <span class="date"> 16 Oct 2019</span>
+
+            </div>
+            <div class="card-description">
+              <p>Machine Learning is a field of artificial intelligence that uses statistical techniques to give
+                computer systems the ablity to "learn" e.g progressively improve performance on a specfic...
+              </p>
+            </div>
+
+      </section>
+      </a>
+
+
+
+
+
+
+    </div>
+
+
+  </main>
+  <footer class="footer">
+    <span style="color:#fff;"></span>
+    <span style="float:right; color:#fff;"></span>
+
+
+  </footer>
+</body>
+
+</html>
